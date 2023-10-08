@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="description" content="Free Web tutorials for HTML and CSS">
-        <meta name="author" content="John Doe">
-        <title>A Meaningful Page Title</title>
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+    <meta name="description" content="Khaled's personal webpage">
+    <meta name="author" content="Khaled">
+    <title>PersonalWebpage</title>
+    <link rel="icon" type="image/x-icon" href="icons8-favicon-48.png">
+    <link rel="stylesheet" href="activity.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Personal Webpage</h1>
+            <button onclick="dark()">Dark Mode</button>
+            <button onclick="light()">Light Mode</button>
+        </div>
+
+        <div class="middle">
+
+            <aside class="aside">
+                <p>do you know honey never spoils?</p>
+            </aside>
+
+            <article class="article">
+                <p>bye.</p>
+
+                <div class="images">
+                    <img src="icons8-favicon-48.png" alt="Image 1">
+                    <img src="icons8-favicon-48.png" alt="Image 2">
+                    <img src="icons8-favicon-48.png" alt="Image 3">
+                </div>
+            </article>
+        </div>
+
+        <footer class="footer">
+            <p>Personal Webpage © 2023</p>
+        </footer>
+
+    </div>
+
+    <script>
+        let body = document.body;
+        function dark() {
+            body.style.backgroundColor = "#575757";
+            body.style.color = "#ffffff";
+        }
+        function light() {
+            body.style.backgroundColor = "#ffffff";
+            body.style.color = "#363636";
+        }
+    </script>
+
+</body>
+
 </html>
